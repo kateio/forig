@@ -99,7 +99,7 @@ function App() {
 
         <div className="gallery container">
           <h2 className="titleGallery titleSection">Gallery</h2>
-
+          <Slider/>
 
         </div>
 
