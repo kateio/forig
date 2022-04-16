@@ -7,7 +7,7 @@ import card13 from './pic/card13.jpg';
 import card10 from './pic/card10.jpg';
 import pic1 from './pic/pic1.png';
 import ProductCard from './productCard.js'
-import Slider from './Slider.js'
+import Slider from './component-slider/Slider.js'
 
 console.log(arrProductCards[1]);
 
