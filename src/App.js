@@ -1,4 +1,7 @@
 import './App.css';
+
+import NavBar from './NavBar/NavBar.js'
+
 import first1 from './pic/first1.png';
 import first2 from './pic/first2.png';
 import arrProductCards from './arrProductCards.js';
@@ -6,8 +9,12 @@ import card6 from './pic/card6.jpg';
 import card13 from './pic/card13.jpg';
 import card10 from './pic/card10.jpg';
 import pic1 from './pic/pic1.png';
-import ProductCard from './productCard.js'
-import Slider from './component-slider/Slider.js'
+import ProductCard from './productCard.js';
+
+import Slider from './component-slider/Slider.js';
+
+import Footer from './Footer/Footer.js'
+
 
 console.log(arrProductCards[1]);
 
@@ -15,13 +22,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <div className="logo">Forig</div>
-        <ul className="headerMenu">
-          <li>products</li>
-          <li>new</li>
-          <li>about us</li>
-          <li>gallery</li>
-        </ul>
+        <NavBar/>
       </div>
           
       <div className="main container">
@@ -61,9 +62,9 @@ function App() {
 
           <div className="row1_About">
             <div>
-              <h2 className="titleAbout">About</h2>
+              <h2 className="titleAbout titleA">About</h2>
             </div>
-            <div>
+            <div className="text">
               <p>Forig studio was founded in 2018. We cooperate with famous Italian designers and  architects  with  elegent,  contemporary and simple design. </p>
             </div>
           </div>
@@ -82,6 +83,9 @@ function App() {
             </div>
           </div>
 
+          <p className="textAdaptive">Our philosophy balances simplicity and honesty so that the designs may continue to grow 
+                 in today’s ever-changing world.</p>
+
           <div className="row3_About">
             <div className="picCard10">
               <img src={card10}/>
@@ -94,6 +98,7 @@ function App() {
             </div>
           </div>
 
+          <p className="textAdaptive">We care about our customers, so we make furniture only from high quality materials.</p>
 
         </div>
 
@@ -102,10 +107,9 @@ function App() {
           <Slider/>
 
         </div>
+        
+        <Footer/>
 
-
-      <div className="footer container">
-      </div>
     </div>
   );
 }

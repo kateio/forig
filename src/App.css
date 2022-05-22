@@ -10,54 +10,12 @@ img{
 }
 
 
-/*-----------------------HEADER------------------------------------------*/
-
-.header{
-  display:flex;
-  align-items:center;
-  width:100%;
-  z-index:10;
-  max-width:1240px;
-  margin: 0 auto;
-}
-
-.headerMenu{
-  font-size:16px;
-  text-transform: uppercase;
-}
-
-
-div .logo{
-  font-family: 'Cormorant Infant', sans-serif;
-  font-size: 28px;
-  margin-right:382px;
-}
-
-@media only screen and (min-width: 740px) {
-   
-   .headerMenu{
-	  display:flex;
-	  align-items:center;
-	}
-
-	.headerMenu li{
-	margin-right: 100px;
-
-	}
-
-	.headerMenu li:last-child{
-		margin-right: 0px;
-	}
-
-}
-
-
 /*---------------------------FIRST---------------------------------------*/
 
 
 .firstScreen {
 	display:flex;
-	margin-top:100px;
+	margin-top:190px;
 }
 
 .first1{
@@ -115,6 +73,11 @@ div .logo{
 
 @media only screen and (max-width: 1230px) {
 
+	.main{
+    	margin-top:120px;
+  	}
+
+
 	.firstScreen{
 		margin-top:64px;
 		justify-content: space-between;
@@ -155,25 +118,48 @@ div .logo{
 
 @media only screen and (max-width: 1100px) {
 
-	.headerMenu {
-		margin: 0 0 0 auto;
-	}
-
-	.headerMenu li{
-		margin-right: 80px;
-
-	}
-
-	div .logo{
-  		margin-right:80px;
-
-   }
-
    .firstRow2 .first2{
-   		width:400px;
+   		width:100%;
    		height:412px;
 
    }
+}
+
+@media only screen and (max-width: 720px) {
+
+	.mainTitle{
+		font-size:35px;
+	}
+
+	.first1{
+		display:none;
+	}
+
+	.firstScreen{
+		flex-direction: column-reverse;
+	}
+
+	.firstGroup {
+		margin-right:0px;
+	}
+
+	.firstText{
+		width:100%;
+	}
+
+	/*.firstRow2 div .first2{
+	  width:100%;
+      max-width:100%;
+  
+      display:flex;
+      position:relative;
+	}*/
+
+	.first2 img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
 
 }
 
@@ -184,14 +170,19 @@ div .logo{
 .titleSection {
 	font-family:'Cormorant Infant', sans-seri;
 	font-size:61.4px;
-	margin-bottom:80px;
+	margin-bottom:70px;
 }
 
 /*--------------------NEW----------------------------------------*/
 
 .newCards{
 	display:flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    overflow-x: auto;
+}
+
+.newCards::-webkit-scrollbar{
+	width:0;
 }
 
 .new .imgBlock{
@@ -207,11 +198,13 @@ div .logo{
 
 .card{
 	width:286px;
+	margin-right: 32px;
 }
 
 
 .card:nth-child(4){
   align-self: flex-end;
+  margin-right:0;
 }
 
 .card .title{
@@ -219,9 +212,53 @@ div .logo{
 	text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1150px) {
+
+	.card:nth-child(3) .imgBlock{
+   	  height:272px;
+	}
+
+	.card:nth-child(4){
+	  align-self: flex-start;
+
+	}
+
+	.card{
+	margin-right: 20px;
+	
+	}
+
+}
+
+@media only screen and (max-width: 740px) {
+
+	.new .imgBlock{
+		width:260px;
+		height:247px;
+
+    }
+
+    .card{
+    	width:260px;
+    	margin-right: 16px;
+    }
+
+    .card:nth-child(3) .imgBlock{
+   	  height:247px;
+	}
+
+
+}
+
+
+
 /*--------------------ABOUT-------------------------------------*/
 .titleAboutAD{
 	display:none;
+}
+
+.titleA{
+	display:block;
 }
 
 .about img{
@@ -260,7 +297,9 @@ div .logo{
 
 }
 
-
+.row2_About p, .row3_About p{
+	display: block;
+}
 
 .picCard6{
 	width:604px;
@@ -295,6 +334,89 @@ div .logo{
 	height:248px;
 	margin-bottom:110px;
 }
+
+.textAdaptive{
+	display:none;
+}
+
+
+@media only screen and (max-width: 1150px) {
+
+  .titleA{
+  	display:none;
+  }
+
+  .titleAboutAD{
+  	display:block;
+  }
+
+  .about p {
+  	width:100%;
+  }
+
+  .textAdaptive{
+	display:block;
+	margin-bottom:50px;
+  }
+
+
+  .row1_About, .row2_About, .row3_About{
+	margin-bottom:50px;
+
+  }
+
+  .row2_About p, .row3_About p{
+	display: none;
+  }
+  
+  .picCard13{
+	width:260px;
+	height:261px;
+	align-self: flex-start;
+	margin:0;
+
+  }
+
+  .picCard6{
+	width:400px;
+	height:358px;
+  }
+
+  .picCard10{
+	width:399px;
+	height:386px;
+	margin: 0px;
+  }
+
+  .pic1{
+	width:260px;
+	height:225px;
+	margin:0;
+  }
+
+  .row3_About {
+     justify-content: space-between;
+  }
+  
+  .titleSection{
+  	margin-bottom: 50px;
+  	font-size:41.4px;
+  }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+	.row2_About .column1{
+		display:none;
+	}
+
+	.row3_About .column2{
+		display:none;
+	}
+
+}
+
 
 
 

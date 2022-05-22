@@ -30,7 +30,7 @@ function Slider() {
 	}
 
 	return (
-	 <div>
+	 <div className="container">
 		 <div className="container-slider">
 		 	{arrSlider.map((obj, index) => {
 		 		return (

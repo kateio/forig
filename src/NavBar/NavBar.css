@@ -1,0 +1,140 @@
+
+.Menu{
+  font-size:16px;
+  text-transform: uppercase;
+}
+
+.headerMenu{
+	  display:flex;
+	  align-items:center;
+	}
+
+	.headerMenu li{
+	margin-right: 100px;
+
+	}
+
+	.headerMenu li:last-child{
+		margin-right: 0px;
+	}
+
+
+
+div .logo{
+  font-family: 'Cormorant Infant', sans-serif;
+  font-size: 28px;
+  margin-right:382px;
+}
+
+
+.navBar{
+	position:fixed;
+	top:0;
+	left:0;
+	background:white;
+    width:100%;
+    z-index:999;
+    padding-left:16px;
+    padding-right:16px;
+  
+
+
+}
+
+.nav {
+	display:flex;
+	align-items:center;
+    width:100%;
+    z-index:10;
+    max-width:1240px;
+    margin: 0 auto;
+    margin-top:22px;
+    margin-bottom:22px;
+}
+
+.navBar .MobileNavigation {
+	display:none;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+	.headerMenu {
+		margin: 0 0 0 auto;
+	}
+
+	.headerMenu li{
+		margin-right: 80px;
+
+	}
+
+	div .logo{
+  		margin-right:80px;
+
+   }
+}
+
+
+@media only screen and (max-width: 740px) {
+
+	.headerMenu{
+		display:block;
+	}
+
+	.navBar .Navigation {
+		display:none;
+	}
+
+
+	.navBar .MobileNavigation {
+		display:flex;
+		align-items:center;
+	}
+
+	.navBar .MobileNavigation .burger{
+		width:20px;
+		height:15px;
+		position:absolute;
+		right:16px;
+		z-index:999;
+	}
+
+	.navLinks{
+		height:100%;
+		background-color: white;
+		position: fixed;
+		width: 248px;
+		height: 100vh;
+		right: 0px;
+		top: 0px;
+		box-shadow: 0px 4px 40px 4px rgba(0, 0, 0, 0.15);
+	}
+
+	.headerMenu{
+		padding-top:292px;
+		padding-left: 33px;
+	}
+
+	.headerMenu li{
+		margin-bottom:60px;
+	}
+
+	.headerMenu li:last-child{
+		margin-bottom:60px;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

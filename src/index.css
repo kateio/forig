@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+
+a{
+  text-decoration: none;
+  list-style:none;
+  color:black;
+}
+
 ul,
 ol,
 li {
@@ -39,7 +46,7 @@ code {
 .container {
 	max-width:1240px;
   margin: 0 auto;
-  margin-bottom:200px;
+  margin-bottom:150px;
   /*
 	margin: 0 auto;
 	padding: 0 0 0 15px;
@@ -47,7 +54,13 @@ code {
 	/*padding-left:32px;*/
 }
 
+@media only screen and (max-width: 1150px){
 
+  .container{
+    margin-bottom: 100px;
+  }
+
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
