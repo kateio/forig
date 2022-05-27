@@ -1,8 +1,12 @@
 import React from 'react'
+import arrProductCards from './arrProductCards.js';
+
+import './productCard.css'
 
 
 function ProductCard (props) {
     const {card} = props
+
 	return (
     	<div className="card">
     		<div className="imgBlock"><img src={card.image}/></div>

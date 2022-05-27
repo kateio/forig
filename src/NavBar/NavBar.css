@@ -9,14 +9,28 @@
 	  align-items:center;
 	}
 
-	.headerMenu li{
+.headerMenu li{
 	margin-right: 100px;
 
-	}
+}
 
-	.headerMenu li:last-child{
-		margin-right: 0px;
-	}
+.headerMenu li:last-child{
+	margin-right: 0px;
+}
+
+.headerMenu a{
+	/*transition-property: font-size;
+  	transition-duration: 0.2s;
+  	transition-timing-function: ease-out;*/
+}
+
+.headerMenu a:hover{
+	/*transition-property: font-size;
+  	transition-duration: 0.2s;
+  	transition-timing-function: ease-out;
+  	font-size: 18px;*/
+  	text-decoration: underline;
+}
 
 
 

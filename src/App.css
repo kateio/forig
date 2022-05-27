@@ -1,21 +1,9 @@
-.App {
-  
-}
-
-
-img{
-	object-fit:cover;
-	width:100%;
-	height:100%;
-}
-
 
 /*---------------------------FIRST---------------------------------------*/
 
 
 .firstScreen {
 	display:flex;
-	margin-top:190px;
 }
 
 .first1{
@@ -29,14 +17,14 @@ img{
 }
 
 .mainTitle1 {
-	font-family:'Cormorant Infant', sans-seri;
-	font-size:50px;
 	text-transform: uppercase;
 	margin-top:72px;
+	margin-bottom: 0;
 }
 
 .mainTitle{
 	display:none;
+	margin-bottom: 0;
 }
 
 .firstGroup {
@@ -56,13 +44,23 @@ img{
 .firstBtn{
 	width:100%;
 	height:50px;
-	background-color: white;
 	border: 1px solid black;
 	text-transform: uppercase;
 	margin-top:32px;
-
-
+	transition-property: background-color, color;
+  	transition-duration: 0.4s;
+  	transition-timing-function: ease-out;
+  	background-color: white;
 }
+
+.firstBtn:hover{
+	transition-property: background-color, color;
+  	transition-duration: 0.4s;
+  	transition-timing-function: ease-out;
+	background-color: black;
+	color:white;
+}
+
 
 .firstGroup{
 	text-transform: uppercase;
@@ -105,10 +103,7 @@ img{
 
 	.mainTitle{
 		display:block;
-		font-family:'Cormorant Infant', sans-seri;
-		font-size:50px;
 		text-transform: uppercase;
-		margin-top:60px;
 	}
 
 
@@ -147,14 +142,6 @@ img{
 		width:100%;
 	}
 
-	/*.firstRow2 div .first2{
-	  width:100%;
-      max-width:100%;
-  
-      display:flex;
-      position:relative;
-	}*/
-
 	.first2 img{
 	width:100%;
 	height:100%;
@@ -169,15 +156,30 @@ img{
 
 .titleSection {
 	font-family:'Cormorant Infant', sans-seri;
-	font-size:61.4px;
+	font-size:50px;
 	margin-bottom:70px;
+}
+
+@media only screen and (max-width: 1150px) {
+
+	.titleSection{
+	  	margin-bottom: 50px;
+	  	font-size:40px;
+  	}
+
+}
+
+@media only screen and (max-width: 740px){
+
+	.titleSection{
+	  	font-size:35px;
+  	}
 }
 
 /*--------------------NEW----------------------------------------*/
 
 .newCards{
 	display:flex;
-    /*justify-content: space-between;*/
     overflow-x: auto;
 }
 
@@ -185,32 +187,16 @@ img{
 	width:0;
 }
 
-.new .imgBlock{
-	width:286px;
-	height:272px;
-	margin-bottom:24px;
-
-}
-
 .card:nth-child(3) .imgBlock{
    height:464px;
 }
-
-.card{
-	width:286px;
-	margin-right: 32px;
-}
-
 
 .card:nth-child(4){
   align-self: flex-end;
   margin-right:0;
 }
 
-.card .title{
-	color: #8E8E8E;
-	text-transform: uppercase;
-}
+
 
 @media only screen and (max-width: 1150px) {
 
@@ -259,6 +245,8 @@ img{
 
 .titleA{
 	display:block;
+	margin-bottom:0;
+	margin-right: 508px;
 }
 
 .about img{
@@ -276,12 +264,6 @@ img{
   margin-bottom:100px;
   align-items: center;
 
-}
-
-.titleAbout{
-	margin-right: 481px;
-	font-family:'Cormorant Infant', sans-seri;
-	font-size:61.4px;
 }
 
 .row2_About{
@@ -398,10 +380,6 @@ img{
      justify-content: space-between;
   }
   
-  .titleSection{
-  	margin-bottom: 50px;
-  	font-size:41.4px;
-  }
 
 }
 

@@ -1,0 +1,16 @@
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cards .card{
+	margin-bottom:40px;
+}
+
+.cards .card:nth-child(3) .imgBlock{
+   height:272px;;
+}
+
+.cards .card:nth-child(4n){
+	margin-right:0;
+}

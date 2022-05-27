@@ -25,6 +25,10 @@
 	margin-right: 0px;
 }
 
+.footerMenu a:hover {
+	text-decoration: underline;
+}
+
 
 .footerRow2 div {
    font-size:16px;
@@ -67,7 +71,6 @@
 }
 
 .social li{
-	width:22px;
 	height:22px;
 	margin-right:24px;
 
@@ -125,10 +128,13 @@
 		margin-bottom:18px;
 	}
 
+
 	.mMenu{
 		margin-right:32px;
 		display: flex;
 		align-items: center;
+		cursor: pointer;
+		padding-top:5px;
 	}
 
 	.mMenu div {
@@ -142,6 +148,17 @@
 	}
 
 
+}
+
+.arrowMenuU, .arrowMenuD {
+	height:16px;
+	width:16px;
+	transition:0.4s;
+}
+
+.arrowMenuU {
+	transform: rotate(180deg);
+	transition: 0.4s;
 }
 
 

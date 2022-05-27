@@ -8,21 +8,13 @@ function MobileMenu () {
 
 	const [open, setOpen] = useState(false);
 
-	const ArrowDown = <img src={arrowD} className="arrowMenu" width="16px" height="16px"
-    			 			onClick={() => setOpen(!open) }
-    					/>
-
-    const ArrowUp = <img src={arrowU} className="arrowMenu" width="16px" height="16px"
-    			 			onClick={() => setOpen(!open)}
-    					/>
-
     const closeMobileMenu = () => setOpen(false);
 
 	return(
 		<div className="Menu MobileMenu">
-			<div className="mMenu">
+			<div className="mMenu" onClick={() => setOpen(!open)}>
 				<div >menu</div>
-				{open ? ArrowUp : ArrowDown}
+				<img src={arrowD} className={open ? "arrowMenuU" : "arrowMenuD"}/>
 			</div>
     		{open && <MenuLinks className="" isMobile={true} closeMobileMenu={closeMobileMenu}/>}
 		</div>

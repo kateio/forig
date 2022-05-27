@@ -5,7 +5,7 @@ function NavLinks (props) {
     	<div className="navLinks">
     		<ul className="Menu headerMenu">
 		        <li onClick={() => props.isMobile() && props.closeMobileMenu()}>
-		        	<a href="#">products</a>
+		        	<a href="/products">products</a>
 		        </li>
 		        <li onClick={() => props.isMobile() && props.closeMobileMenu()}>
 		        	<a href="#">new</a>

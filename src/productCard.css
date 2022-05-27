@@ -1,0 +1,16 @@
+.card{
+	width:286px;
+	margin-right: 32px;
+}
+
+
+.card .imgBlock {
+	width:286px;
+	height:272px;
+	margin-bottom: 24px;
+}
+
+.card .title{
+	color: #8E8E8E;
+	text-transform: uppercase;
+}

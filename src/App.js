@@ -26,15 +26,15 @@ function App() {
       </div>
           
       <div className="main container">
-        <h1 className="mainTitle">introducing a forig collection </h1>
+        <h1 className="mainTitle titleSection">introducing a forig collection </h1>
         <div className="firstScreen" >
           <div className="firstRow1">
-            <h1 className="mainTitle1">introducing a forig collection </h1>
+            <h1 className="mainTitle1 titleSection">introducing a forig collection </h1>
             <div className="firstGroup">
               <div className="first1"><img src={first1}  width="200"/></div>
               <div className="firstText">
                 <p>changing the way people design and shop for their home</p>
-                <button className="firstBtn">see products</button>
+                <button className="firstBtn" onClick={() => window.location.href = "/products"}>see products</button>
               </div>
             </div>
           </div>
@@ -47,10 +47,10 @@ function App() {
       <div className="new container">
           <h2 className="titleNew titleSection">New</h2>
           <ul className="newCards">
-          <li className="card"><ProductCard card={arrProductCards[0]} /></li>
-          <li className="card"><ProductCard card={arrProductCards[1]} /></li>
-          <li className="card"><ProductCard card={arrProductCards[3]} /></li>
-          <li className="card"><ProductCard card={arrProductCards[2]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[0]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[1]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[3]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[2]} /></li>
           </ul>
 
 
@@ -62,7 +62,7 @@ function App() {
 
           <div className="row1_About">
             <div>
-              <h2 className="titleAbout titleA">About</h2>
+              <h2 className="titleAbout titleSection titleA">About</h2>
             </div>
             <div className="text">
               <p>Forig studio was founded in 2018. We cooperate with famous Italian designers and  architects  with  elegent,  contemporary and simple design. </p>

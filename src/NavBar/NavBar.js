@@ -8,7 +8,7 @@ function NavBar () {
 	return(
     	<div className="navBar">
     		<div className="nav">
-	    		<div className="logo">Forig</div>
+	    		<div className="logo"><a href="/">Forig</a></div>
 	    		<MobileNavigation/>
 	    		<Navigation/>
     		</div>

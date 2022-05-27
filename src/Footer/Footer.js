@@ -16,7 +16,7 @@ function Footer ()  {
 	return(
 		<div className="footer container">
 			<div className="footerRow1">
-				<div className="logo">Forig</div>
+				<div className="logo"><a href="/">Forig</a></div>
 				<Menu/>
 				<MobileMenu/>
 			</div>
@@ -24,11 +24,11 @@ function Footer ()  {
 	        <div className="footerRow2">
 	        	<div >Privacy & Cookies Policy</div>
 		        <ul className="social">
-			     	<li><img src={fb}/></li>
-			        <li><img src={inst}/></li>
-			        <li><img src={twit}/></li>
-			        <li><img src={pin}/></li>
-			        <li><img src={google}/></li>
+			     	<li><a><img src={fb}/></a></li>
+			        <li><a><img src={inst}/></a></li>
+			        <li><a><img src={twit} width="28px"/></a></li>
+			        <li><a><img src={pin}/></a></li>
+			        <li><a><img src={google}/></a></li>
 		        </ul>
 	        </div>
       </div>
