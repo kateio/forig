@@ -30,7 +30,9 @@
 	margin-bottom: 8px;
 }
 
-
+.card .titleLink{
+	color:#8E8E8E;
+}
 .card .titleLink:hover{
 	color:black;
 }
