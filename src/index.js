@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ProductsPage from './ProductsPage.js'
+import ProductsPage from './ProductsPage.js';
+import AboutProduct from './AboutProduct.js';
 
 import {
   BrowserRouter,
@@ -17,7 +18,8 @@ ReactDOM.render(
     <BrowserRouter>
     	<Routes>
     		<Route path="/" element={<App/>}/>
-    		<Route path="/products" element={<ProductsPage/>}/>
+    		<Route path="/products" element={<ProductsPage />}/>
+        <Route path="/page/:id" element={<AboutProduct />}/>
     	</Routes>
     </BrowserRouter>
   </React.StrictMode>,

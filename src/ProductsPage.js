@@ -12,12 +12,12 @@ import Footer from './Footer/Footer.js'
 function ProductsPage () { 
 
 	return (
-		<div>
+		<div className="ProductsPage">
 			<div className="header"><NavBar/></div>
 			<div className="main container">
 				<h2 className="titleProducts titleSection">Products</h2>
 			    <ul className="cards">
-					{arrProductCards.map(card => <li className="card"><ProductCard card={card} /></li>)}
+					{Object.values(arrProductCards).map(card => <li className="card"><ProductCard card={card} /></li>)}
 				</ul>
 
 			</div>

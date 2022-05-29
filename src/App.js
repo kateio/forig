@@ -11,7 +11,7 @@ import card10 from './pic/card10.jpg';
 import pic1 from './pic/pic1.png';
 import ProductCard from './productCard.js';
 
-import Slider from './component-slider/Slider.js';
+import Slider from './Slider/Slider.js';
 
 import Footer from './Footer/Footer.js'
 
@@ -47,10 +47,10 @@ function App() {
       <div className="new container">
           <h2 className="titleNew titleSection">New</h2>
           <ul className="newCards">
-            <li className="card"><ProductCard card={arrProductCards[0]} /></li>
             <li className="card"><ProductCard card={arrProductCards[1]} /></li>
-            <li className="card"><ProductCard card={arrProductCards[3]} /></li>
             <li className="card"><ProductCard card={arrProductCards[2]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[3]} /></li>
+            <li className="card"><ProductCard card={arrProductCards[4]} /></li>
           </ul>
 
 

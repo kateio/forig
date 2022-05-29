@@ -1,5 +1,6 @@
 import React from 'react'
 import arrProductCards from './arrProductCards.js';
+import { Link } from "react-router-dom";
 
 import './productCard.css'
 
@@ -9,8 +10,14 @@ function ProductCard (props) {
 
 	return (
     	<div className="card">
-    		<div className="imgBlock"><img src={card.image}/></div>
-    		<div className="title">{card.title}</div>
+    		<Link to={{ pathname: `/page/${card.id}` }} >
+    		    <div className="imgBlock"><img src={card.image}/></div>
+    		</Link>
+
+            <Link to={{ pathname: `/page/${card.id}` }} >
+    			<div className="title">{card.title}</div>
+    		</Link>
+    		
     		<div className="price">{card.price}</div>
     	</div>
 	);
