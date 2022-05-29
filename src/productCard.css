@@ -8,9 +8,29 @@
 	width:286px;
 	height:272px;
 	margin-bottom: 24px;
+	background-color: black;
+	overflow: hidden;
+}
+
+.card .imgBlock .imgLink img {
+	opacity: 1;
+	transition-property: opacity, transform;
+  	transition-duration: 124ms;
+  	transition-timing-function: linear;
+}
+
+.card .imgBlock .imgLink:hover img {
+	opacity: 0.9;
+	transform: scale(1.05);
 }
 
 .card .title{
 	color: #8E8E8E;
 	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+
+.card .titleLink:hover{
+	color:black;
 }

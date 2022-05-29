@@ -6,22 +6,22 @@ import './productCard.css'
 
 
 function ProductCard (props) {
-    const {card} = props
+    const { card } = props;
 
 	return (
     	<div className="card">
     		<Link to={{ pathname: `/page/${card.id}` }} >
-    		    <div className="imgBlock"><img src={card.image}/></div>
+    		    <div className="imgBlock"><a className="imgLink"><img src={card.image}/></a></div>
     		</Link>
 
             <Link to={{ pathname: `/page/${card.id}` }} >
-    			<div className="title">{card.title}</div>
+    			<div className="title"><a className="titleLink">{card.title}</a></div>
     		</Link>
-    		
+
     		<div className="price">{card.price}</div>
     	</div>
 	);
 
 }
 
-export default ProductCard
+export default ProductCard;
