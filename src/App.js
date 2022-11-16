@@ -92,7 +92,7 @@ function App() {
             </div>
             <div className="column2">
               <div className="pic1">
-              <img src={pic1}/>
+                <img src={pic1}/>
               </div>
               <p>We care about our customers, so we make furniture only from high quality materials.</p>
             </div>
