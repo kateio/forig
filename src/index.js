@@ -14,7 +14,7 @@ import {
 
 
 ReactDOM.render(
-  /*<React.StrictMode>
+  <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
     	<Routes>
     		<Route path="/" element={<App/>}/>
@@ -22,9 +22,7 @@ ReactDOM.render(
         <Route path="/page/:id" element={<AboutProduct />}/>
     	</Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-  */
-  <App />,
+  </React.StrictMode>, 
   document.getElementById('root')
 );
 
